@@ -2,7 +2,7 @@ import cv2
 
 class VideoCamera(object):
     def __init__(self):
-        self.video = cv2.VideoCapture('input.mp4')
+        self.video = cv2.VideoCapture('CarsDrivingUnderBridge.mp4')
     
     def __del__(self):
         self.video.release()
