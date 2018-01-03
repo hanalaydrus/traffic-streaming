@@ -6,6 +6,9 @@ class VideoCamera(threading.Thread):
     def __init__(self):
         threading.Thread.__init__(self)
         self.video = cv2.VideoCapture('CarsDrivingUnderBridge.mp4')
+        success, image = self.video.read()
+        ret, jpeg = cv2.imencode('.jpg',image)
+        self.frame = jpeg.tobytes()
         
     def run(self):
         while True:
