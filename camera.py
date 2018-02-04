@@ -11,12 +11,21 @@ class VideoCamera(threading.Thread):
         self.frame = jpeg.tobytes()
         
     def run(self):
+        frame_count = 0
         while True:
             success, image = self.video.read()
+            frame_count += 1
+            print('frame count', frame_count)
+            print('cv frame total', self.video.get(cv2.CAP_PROP_FRAME_COUNT))
+            if frame_count == self.video.get(cv2.CAP_PROP_FRAME_COUNT):
+                print('yooo')
+                frame_count = 0
+                self.video = cv2.VideoCapture('CarsDrivingUnderBridge.mp4')
+                success, image = self.video.read()
             ret, jpeg = cv2.imencode('.jpg',image)
             self.frame = jpeg.tobytes()
             time.sleep(0.0001)
-    
+
     def __del__(self):
         self.video.release()
     
