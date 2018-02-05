@@ -15,8 +15,7 @@ class VideoCamera(threading.Thread):
         while True:
             success, image = self.video.read()
             frame_count += 1
-            print('frame count', frame_count)
-            print('cv frame total', self.video.get(cv2.CAP_PROP_FRAME_COUNT))
+            
             if frame_count == self.video.get(cv2.CAP_PROP_FRAME_COUNT):
                 print('yooo')
                 frame_count = 0
