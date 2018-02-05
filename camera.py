@@ -17,7 +17,6 @@ class VideoCamera(threading.Thread):
             frame_count += 1
             
             if frame_count == self.video.get(cv2.CAP_PROP_FRAME_COUNT):
-                print('yooo')
                 frame_count = 0
                 self.video = cv2.VideoCapture('CarsDrivingUnderBridge.mp4')
                 success, image = self.video.read()
