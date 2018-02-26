@@ -20,7 +20,6 @@ def index():
 def video_feed():
     return Response(gen(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0')
-    
+                    
+if __name__ == "__main__":
+    app.run()
