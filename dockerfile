@@ -53,4 +53,6 @@ RUN pip install Flask && pip install gunicorn
 COPY . /app
 WORKDIR /app
 
-CMD ["make run"]
+EXPOSE 5001 5002 5003 5004 5005 5006
+
+CMD ["make","run"]

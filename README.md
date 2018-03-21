@@ -1,2 +1,3 @@
-workon tugas-akhir
-gunicorn -w 2 -t 3600 -b 127.0.0.1:5000 wsgi:app
+docker build -t traffic-streaming .
+docker run -d -p 5001:5001 -p 5002:5002 -p 5003:5003 -p 5004:5004 -p 5005:5005 -p 5006:5006 traffic-streaming
+
