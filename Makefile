@@ -6,5 +6,5 @@ run:
 	gunicorn --worker-class gthread --threads 5 -t 3600 -b 127.0.0.1:5005 --chdir ./camera_5 camera_5:app --daemon
 	gunicorn --worker-class gthread --threads 5 -t 3600 -b 127.0.0.1:5006 --chdir ./camera_6 camera_6:app --daemon
 
-none:
+kill:
 	pkill gunicorn
