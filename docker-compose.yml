@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  traffic-streaming-service:
+    build: .
+    container_name: traffic-streaming-service
+    ports:
+      - "5001:5001"
+      - "5002:5002"
+      - "5003:5003"
+      - "5004:5004"
+      - "5005:5005"
+      - "5006:5006"
+
+    restart: always
