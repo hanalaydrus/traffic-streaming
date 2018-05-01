@@ -53,7 +53,7 @@ RUN pip install Flask
 COPY . /app
 WORKDIR /app
 
-ENV export FLASK_APP=main.py
+ENV FLASK_APP=main.py
 
 EXPOSE 5000
 
