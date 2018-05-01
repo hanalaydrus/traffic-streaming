@@ -48,11 +48,13 @@ RUN wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip \
 && rm /${OPENCV_VERSION}.zip \
 && rm -r /opencv-${OPENCV_VERSION}
 
-RUN pip install Flask && pip install gunicorn
+RUN pip install Flask
 
 COPY . /app
 WORKDIR /app
 
-EXPOSE 5001 5002 5003 5004 5005 5006
+ENV export FLASK_APP=main.py
+
+EXPOSE 5000
 
 CMD ["make","run"]
