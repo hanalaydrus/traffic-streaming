@@ -22,7 +22,6 @@ class VideoCamera(threading.Thread):
                 success, image = self.video.read()
             ret, jpeg = cv2.imencode('.jpg',image)
             self.frame = jpeg.tobytes()
-            time.sleep(0.0001)
 
     def __del__(self):
         self.video.release()
