@@ -15,7 +15,7 @@ RUN apt-get update && \
         libjpeg-dev \
         libpng-dev \
         libtiff-dev \
-        libjasper-dev \
+//        libjasper-dev \
         libavformat-dev \
         libpq-dev
 
