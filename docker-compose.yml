@@ -2,6 +2,7 @@ version: '3'
 
 services:
   traffic-streaming-service:
+    build: .
     image: traffic-streaming
     container_name: traffic-streaming
     ports:
