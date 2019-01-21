@@ -15,9 +15,11 @@ This are steps to run this code in your local:
 **2. Make sure docker-compose installed**, If not please check the link below
 https://docs.docker.com/compose/install/
 
-**3. Run** `docker-compose up --build` **or** `sudo docker-compose up —-build`
+**3. Clone this repo** `git clone https://github.com/hanalaydrus/traffic-streaming.git`
 
-**4. The prototype camera should already run on** `localhost:5000`
+**4. Run** `docker-compose up --build` **or** `sudo docker-compose up —-build`
+
+**5. The prototype camera should already run on** `localhost:5000`
 
 
 There are 6 prototype camera:
