@@ -4,7 +4,7 @@ Traffic streaming will run 6 camera prototype for detection.
 
 This are steps to run this code in your local:
 
-1. Install Docker
+**1. Install Docker**
 
  - Windows : https://docs.docker.com/docker-for-windows/install/ 
 
@@ -12,13 +12,15 @@ This are steps to run this code in your local:
 
  - Ubuntu : https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
-2. Make sure docker-compose installed, if not please check the link below
+**2. Make sure docker-compose installed**, If not please check the link below
 https://docs.docker.com/compose/install/
 
-3. Run `docker-compose up --build` or `sudo docker-compose up —-build`
-4. The prototype camera should already run on `localhost:5000`
+**3. Run** `docker-compose up --build` **or** `sudo docker-compose up —-build`
 
- There are 6 prototype camera:
+**4. The prototype camera should already run on** `localhost:5000`
+
+
+There are 6 prototype camera:
 
  - Access camera 1 through `localhost:5000/camera_1`
  
@@ -31,5 +33,3 @@ https://docs.docker.com/compose/install/
  - Access camera 5 through `localhost:5000/camera_5`
  
  - Access camera 6 through `localhost:5000/camera_6`
-
-
