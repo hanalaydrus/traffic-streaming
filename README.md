@@ -17,7 +17,7 @@ https://docs.docker.com/compose/install/
 
 **3. Clone this repo** `git clone https://github.com/hanalaydrus/traffic-streaming.git`
 
-**4. Run** `docker-compose up --build` **or** `sudo docker-compose up —-build`
+**4. Run** `docker-compose up --build` **or** `sudo docker-compose up --build`
 
 **5. The prototype camera should already run on** `localhost:5000`
 
